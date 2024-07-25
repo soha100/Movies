@@ -10,8 +10,11 @@ function App() {
       <Navbar />
 
       <Routes>
-        {/* <Route path="" element={<Slider />}></Route> */}
-        <Route path="/" element={<Movies />}></Route>
+       
+        <Route path="/" element={ <>
+              <Slider />
+              <Movies />
+            </>}></Route>
         <Route path="movie/:movieId" element={<MovieDetails />} />
       </Routes>
     </>
